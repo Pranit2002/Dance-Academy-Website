@@ -1,0 +1,42 @@
+extends base.pug 
+
+block scripts
+  script(src="/static/index.js") 
+block style
+    style 
+        include ../static/stylebase.css
+block content
+    
+     div.container
+        section#introsection 
+            h1 ABCD Dance Academy 
+            h2 Eat Sleep Dance Repeat
+       
+        section#missionsection 
+         p  Dance Styles  
+          .card 
+            div.box
+             img.img1(src="../static/img1.png", alt="err")
+             div.text
+               h2  DUET 
+               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eaque quaerat nisi quidem saepe, a porro illum quo possimus quas vel eius officiis consequatur totam!
+            div.box
+             img.img2(src="../static/img2.png", alt="err")
+             div.text
+               h2  FREESTYLE
+               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eaque quaerat nisi quidem saepe, a porro illum quo possimus quas vel eius officiis consequatur totam!
+            div.box
+             img.img3(src="../static/img3.png", alt="err")
+             div.text
+               h2  BALLET
+               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eaque quaerat nisi quidem saepe, a porro illum quo possimus quas vel eius officiis consequatur totam!
+        section#sponsersection 
+            p Our Sponsers
+            div.logo
+                img(src="../static/logo1.jpg", alt="")
+                img(src="../static/logo2.jpg", alt="")
+                img(src="../static/logo3.jpg", alt="")
+                img(src="../static/logo4.jpg", alt="")
+                
+
+     

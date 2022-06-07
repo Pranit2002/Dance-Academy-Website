@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+
+    background: #121313eb;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    list-style: none;
+    padding: 5px;
+}
+
+nav ul li {
+    text-decoration-line: none;
+    padding-top: 8px;
+    margin: 3px;
+    font-size: 21px;
+}
+
+
+nav ul img {
+    border-color: black;
+    border-radius: 60px;
+    background: #728477;
+    padding-right: 20px;
+    height: 50px;
+    width: 80px;
+}
+nav ul li a {
+    color: aquamarine;
+    text-decoration: none;
+    margin: 2px;
+  padding: 7px;
+   }
+nav ul li:hover{
+    border-radius: 10px;
+background: rgb(232, 238, 241);
+  
+}
+nav ul li a:hover{
+    color: maroon;
+}
+
+ nav ul img:hover{
+    cursor: pointer;
+    background:rgb(233, 231, 227);
+}
+
+.navigation{
+    display: none;
+}
+
+
+.box p {
+    margin-top: 15px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 0px;
+    margin-top: -290px;
+    color: aquamarine;
+}
+
+
+#introsection{
+    margin-top: 60px;
+     /* z-index: -1;  */
+    color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+ background: center/cover no-repeat url("/static/ballet1.jpg")  ; 
+
+}
+
+
+.img1{
+    position: inherit;
+ 
+    margin: 2px;
+    width: 55%;
+}
+
+.img2 {
+    position: inherit;
+ 
+    margin: 2px;
+    width: 55%;
+}
+
+.img3{
+    position: inherit;
+  
+    margin: 2px;
+    width: 55%;
+    
+}
+#missionsection{
+    /* display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; */
+    height: 360px;
+    background-color: rgb(26, 22, 22);
+/* width: 100%; */
+}
+#missionsection > p {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 34px;
+    text-align: center;
+    color: aquamarine;
+}
+#missionsection h2{
+    margin-top: 20px;
+}
+.card{
+    display: flex;
+    /* flex-direction:row; */
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 11px;
+    height: 250px;
+    width: 27%;
+    border: 2px solid red;
+    border-radius: 50px;
+    background: white;
+    padding: 5px;
+}
+.box:hover{
+cursor: pointer;
+background-color: crimson;
+color: cyan;
+font-size: 18px;
+transition: all .5s;
+}
+
+
+
+#sponsersection{
+    height: 360px;
+    background-color: rgb(34, 10, 10);
+/* width: 100%; */
+}
+
+#sponsersection > p {
+    display: block;
+    margin-top: 20px;
+    font-size: 34px;
+    text-align: center;
+    color: blanchedalmond;
+    
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo > img {
+    margin: 20px;
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    position: relative;
+    border-radius: 70px;
+}
+
+.logo > img:hover{
+    cursor: pointer;
+    transform: rotateY(360deg);
+    transition: all 4s;
+    
+}
+
+
+#footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    background: #252626;
+    color: aquamarine;
+}
+
+
+
+@media (max-width:1400px) {
+    #missionsection{
+        height: 1050px;
+        background-color: rgb(26, 22, 22);
+    }
+    .card{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        display: flex;
+        margin: 11px;
+        height: 300px;
+        width: 60%;
+        border: 2px solid red;
+        border-radius: 50px;
+        background: white;
+        padding: 5px;
+    }
+   
+    .box p {
+        margin-top: 15px;
+        font-size: 23px;
+    }
+   
+   
+}
+
+@media (max-width:1160px){
+    #sponsersection{
+        height: 720px;
+        background-color: rgb(34, 10, 10);
+        
+   
+    }
+    .logo {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo > img {
+        margin: 20px;
+        height: 270px;
+        width: 35%;
+        padding: 20px;
+        position: relative;
+        border-radius: 70px;
+    }
+   
+   
+}
+
+@media (max-width:1024px){
+
+     .navbar{
+        display: none;
+    }
+    .navigation{
+        display: block;
+    }
+    #introsection {
+        margin-top: -1px;
+        /* z-index: -1; */
+        color: aquamarine;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 380px;
+        background: center/cover no-repeat url(/static/ballet1.jpg);
+    }
+   
+}
+
+.dv {
+    width: 10px;
+    height: 0px;
+    background-color: black;
+    margin: 0px 685PX;
+    
+  }
+  .navigation p{
+      margin: 4px;
+      color: aquamarine;
+      font-size: 35px;
+  }
+  .nv {
+    width: 77px;
+    height: 6px;
+    background-color: black;
+    margin: 6px 5px;
+}
+
+  ul div li{
+    text-decoration-line: none;
+    padding-top: 20px;
+    margin: -7px;
+    font-size: 30px;
+  }
+  #fb {
+      background: #728477;
+   margin-left: -2px;
+    height: 50px;
+    width: 95px;
+    border-radius: 7px;
+}
+
+#li{
+display: none;
+margin-left: -52px;
+/* display: block; */
+width: 151px;
+margin-top: 15px;
+
+}
+  
+
+ 
+
+

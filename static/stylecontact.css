@@ -1,0 +1,68 @@
+.contactbox{
+    height: 94.5vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ 
+ .contactbox > h3{
+     font-size: 35px;
+     margin-top: 0px;
+     margin-bottom: 20px;
+ }
+ 
+ .myForm{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ 
+ }
+ 
+ .myInput {
+     width: 600px;
+     margin: 10px;
+     height: 40px;
+     border: 2px solid red;
+     border-radius: 10px;
+     text-align: left;
+     font-size: 20px;
+ 
+ }
+ 
+ #Gender{
+     
+         width: 600px;
+         margin: 10px;
+         height: 40px;
+         border: 2px solid red;
+         border-radius: 10px;
+         text-align: left;
+         font-size: 20px;
+         opacity: .5;
+     
+     }
+ 
+ 
+ .myText{
+     font-size: 20px;
+ }
+ .btn{
+     font-size: 26px;
+     width: 100px;
+     height: 35px;
+     border: 2px solid red;
+     border-radius: 5px;
+     text-align: center;
+ }
+ 
+ .btn:hover{
+ background-color: #121313eb;
+ color: aquamarine;
+ cursor: pointer; 
+ 
+ }
+ 
+ 
+ 

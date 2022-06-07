@@ -1,0 +1,37 @@
+doctype html 
+html
+  head
+    title DANCE WEBSITE 
+    block scripts
+    block style
+      style 
+        include ../static/stylebase.css
+  body
+    nav.navbar 
+      ul 
+        img(src="../static/logo.png", alt="")
+        li  #[a(href='/') Home]
+        li  #[a(href='/') About us]
+        li  #[a(href='/') Services]
+        li  #[a(href='/contact') Contact us]
+    nav.navigation 
+      ul(id="ul") 
+        img(src="../static/logo.png", alt="")
+        p ABCD 
+        div.dv
+          button(onclick="myFunction()"  id="fb")
+            div.nv
+            div.nv
+            div.nv
+              div(id="li")
+                li  #[a(href='/') Home]
+                li  #[a(href='/') About us]
+                li  #[a(href='/') Services]
+                li  #[a(href='/contact') Contact us]
+          
+      
+      
+    block content
+  #footer
+    p © 2022 ABCD Dance Academy | All Rights Reserved
+         

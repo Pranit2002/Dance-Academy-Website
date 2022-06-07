@@ -1,0 +1,30 @@
+extends base.pug
+block scripts
+  script(src="/static/index.js")
+block style
+  style 
+    include ../static/stylebase.css
+    include ../static/stylecontact.css
+     
+
+block content 
+  .contactbox 
+    h3 CONTACT US  
+    form(action= "/contact", method="post", class= "myForm")
+      <input type="text" class= "myInput" name="name" placeholder="Enter your name..">
+      <input type="number" class= "myInput" name="number" placeholder="Enter your age..">
+      //- select(name='dropDown', id='sel',placeholder="asd")
+      //-   each val in ['' , 'green' , 'blue']
+      //-     option=val
+      label(for="gender") 
+        select(name=" enter Gender", id="Gender") 
+          option(value="select gender" selected) Select Gender  
+          option(value="Male") Male
+          option(value="Female") Female
+
+      <input type="email" class= "myInput" name="email" placeholder="Enter your email..">
+      <input type="text" class= "myInput" name="address" placeholder="Enter your address.."> 
+      <input type="text" class= "myInput" name="more" placeholder="Enter your dance style"> 
+      button(class="btn")  Submit
+     
+       
